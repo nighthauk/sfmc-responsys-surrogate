@@ -1,0 +1,31 @@
+runtime: node
+runtimeVersion: 8
+env:
+  - name: NODE_ENV
+    value: production
+  - name: LOG_LEVEL
+    value: 3
+  - name: FAUX_TOKEN
+    valueRef:
+      name: RESPONSYS_API
+      key: token
+  - name: UNAUTHORIZED
+    valueRef:
+      name: RESPONSYS_API
+      key: unauthorized
+  - name: BRAND1_CLIENTID
+    valueRef:
+      name: BRAND1
+      key: clientId
+  - name: BRAND1_CLIENTSECRET
+    valueRef:
+      name: BRAND1
+      key: clientSecret
+  - name: BRAND2_CLIENTID
+    valueRef:
+      name: BRAND2
+      key: clientId
+  - name: BRAND2_CLIENTSECRET
+    valueRef:
+      name: BRAND2
+      key: clientSecret
